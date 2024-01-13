@@ -5,7 +5,6 @@
 def read_file(filename=""):
     """ print the content of UTF* to stdout"""
 
-    with open("UTF8.txt", "r")
-    content = file.read()
-    print(content)
-    file.close()
+    with open(filename, encoding = "utf-8") as file:
+        print(file.read(), end = "")
+
