@@ -20,9 +20,9 @@ class Rectangle:
         """to get the value of width of the rectangle"""
 
         if not isinstance(value, int):
-            raise TypeError('value must be integer')
+            raise TypeError('width must be integer')
         if value < 0:
-            raise ValueError('value must be >= 0')
+            raise ValueError('width must be >= 0')
         self.width = value
 
     def height(self):
@@ -34,9 +34,9 @@ class Rectangle:
         """To get the height of a rectangle"""
 
         if not isintance(value, int):
-            raise TypeError('value must be integer')
+            raise TypeError('height must be integer')
         if value < 0:
-            raise ValueError('value must be >= 0')
+            raise ValueError('height must be >= 0')
         self.__height = value
 
     def area(self):
