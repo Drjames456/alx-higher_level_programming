@@ -7,10 +7,6 @@ function countWedgeAntillesMovies (apiUrl) {
       console.error('Error fetching data:', error);
       return;
     }
-    if (response.statusCode !== 200) {
-      console.error('Failed to fetch data:', response.statusCode);
-      return;
-    }
 
     const films = response.body.results;
     const wedgeMoviesCount = films.filter(film =>
