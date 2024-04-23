@@ -17,7 +17,7 @@ function countWedgeAntillesMovies (apiUrl) {
       film.characters.includes('https://swapi-api.alx-tools.com/api/people/18/')
     ).length;
 
-    console.log(`Number of movies featuring Wedge Antilles: ${wedgeMoviesCount}`);
+    console.log(`${wedgeMoviesCount}`);
   });
 }
 
